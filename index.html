@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Coming Soon</title>
+<style>
+  /* Gradient text effect */
+  .gradient-text {
+    background: linear-gradient(90deg, #00C2FF, #FF45ED);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  body {
+    margin: 0;
+    background: #fff;
+    color: #000;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin: 0 0 10px 0;
+    text-align: center;
+  }
+
+  p.subtitle {
+    font-size: 1.2rem;
+    margin: 0 0 30px 0;
+    text-align: center;
+  }
+
+  form {
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  input[type="email"] {
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #00C2FF;
+    border-radius: 8px;
+    background: #fff;
+    transition: border-color 0.3s ease;
+    color: #000;
+  }
+
+  input[type="email"]:focus {
+    border-color: #FF45ED;
+    outline: none;
+  }
+
+  button {
+    padding: 12px;
+    background: linear-gradient(90deg, #00C2FF, #FF45ED);
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+
+  button:hover {
+    opacity: 0.85;
+  }
+
+  /* Remove label text styling */
+  label {
+    display: block;
+  }
+</style>
+</head>
+<body>
+
+  <h1 class="gradient-text">New stuff dropping soon.. Stay Tuned</h1>
+  <p class="subtitle gradient-text">Don't miss out, Sign up!</p>
+
+  <form action="https://formspree.io/f/xjkogrdv" method="POST">
+    <input
+      type="email"
+      name="email"
+      placeholder="Enter your email"
+      required
+      autocomplete="email"
+    />
+    <button type="submit">Notify Me</button>
+  </form>
+
+</body>
+</html>
